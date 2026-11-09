@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All Subjects Quiz — 5864 ప్రశ్నలు | తెలుగు మీడియం</title>
+<meta name="description" content="అన్ని సబ్జెక్ట్‌లు — 5864 ప్రశ్నలు, 17 సబ్జెక్ట్‌లు, 205 చాప్టర్లు, 305 సెట్‌లు. ముందు సబ్జెక్ట్ ఎంచుకోండి, ఆ సబ్జెక్ట్‌లోనే టాపిక్ వారీగా 30 ప్రశ్నల క్విజ్‌లు.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;500;700;900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+:root{--bg:#fdf6e9;--card:#fffdf5;--ink:#22283a;--mut:#6b7280;--line:#e7dcc3;--g1:#7f1d1d;--g2:#4338ca;--g3:#b45309;--g4:#15803d;--ok:#16a34a;--bad:#dc2626;--warn:#d97706}
+body.dark{--bg:#14101f;--card:#1f1a30;--ink:#f3f0ff;--mut:#b8b0d6;--line:#3a3158}
+body{margin:0;font-family:'Noto Sans Telugu',Inter,system-ui,sans-serif;background:var(--bg);background-image:repeating-linear-gradient(45deg,rgba(180,83,9,.04) 0 2px,transparent 2px 22px);color:var(--ink);line-height:1.6}
+a{color:var(--g1)}
+header{position:sticky;top:0;z-index:50;background:linear-gradient(90deg,#1e1b4b,#7f1d1d 65%,#b45309);color:#fff;padding:12px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 4px 24px rgba(0,0,0,.25)}
+header .logo{font-weight:900;font-size:20px;letter-spacing:.2px;display:flex;align-items:center;gap:8px}
+header .logo img{flex-shrink:0;border-radius:50%;width:56px;height:56px}
+.revstage{margin-top:14px}
+.revstage h3{margin-top:0}
+header .sub{font-size:12px;opacity:.9}
+header .sp{flex:1}
+.hbtn{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:999px;padding:7px 13px;cursor:pointer;font-family:inherit;font-weight:700}
+.hbtn:hover{background:rgba(255,255,255,.32)}
+main{max-width:1080px;margin:0 auto;padding:18px 14px 60px}
+.hero{border-radius:24px;padding:26px 22px;color:var(--ink);background:var(--card);border:1px solid var(--line);border-left:8px solid #b45309;box-shadow:0 12px 30px rgba(127,29,29,.12);position:relative;overflow:hidden}
+@keyframes grad{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.hero h1{margin:6px 0 6px;font-size:clamp(26px,5vw,42px);line-height:1.25}
+.hero p{margin:0;color:var(--mut);font-size:16px}
+.badge{display:inline-block;background:#fef3c7;border:1px solid #fbbf24;color:#92400e;padding:4px 12px;border-radius:999px;font-weight:700;font-size:13px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
+.stat{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:12px;text-align:center}
+.stat b{display:block;font-size:24px;color:#7f1d1d}
+.stat span{font-size:12px;color:var(--mut)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:0 8px 24px rgba(127,29,29,.08)}
+h2{font-size:20px;margin:22px 0 10px}
+h3{margin:0 0 6px}
+.mut{color:var(--mut);font-size:14px}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0}
+input[type=search]{flex:1;min-width:220px;padding:12px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font-family:inherit;font-size:15px}
+.chip{border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 14px;cursor:pointer;font-family:inherit;font-weight:700}
+.chip.on{background:#7f1d1d;color:#fff;border-color:transparent}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.topic{position:relative;overflow:hidden}
+.topic:before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--tg,linear-gradient(90deg,#7f1d1d,#b45309))}
+.topic.india{--tg:linear-gradient(90deg,#4338ca,#06b6d4)}
+.topic.world{--tg:linear-gradient(90deg,#059669,#84cc16)}
+.topic.telangana{--tg:linear-gradient(90deg,#db2777,#f97316)}
+.topic.ap{--tg:linear-gradient(90deg,#7f1d1d,#f59e0b)}
+.topic.env{--tg:linear-gradient(90deg,#0d9488,#22c55e)}
+.topic .meta{font-size:13px;color:var(--mut)}
+.pbar{height:10px;background:#e5e7f5;border-radius:999px;overflow:hidden;margin:8px 0}
+.pbar i{display:block;height:100%;background:linear-gradient(90deg,#7f1d1d,#b45309);border-radius:999px}
+.setbtn{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:10px;padding:7px 10px;margin:3px 3px 0 0;cursor:pointer;font-family:inherit;font-weight:700;font-size:13px}
+.setbtn.done{background:#dcfce7;color:#166534;border-color:#86efac}
+.setbtn:hover{border-color:var(--g1)}
+.btn{border:0;border-radius:12px;padding:12px 18px;cursor:pointer;font-family:inherit;font-weight:800;font-size:15px;color:#fff;background:#7f1d1d;box-shadow:0 6px 16px rgba(127,29,29,.30)}
+.btn:hover{filter:brightness(1.12)}
+.btn.pink{background:#be123c;box-shadow:0 6px 16px rgba(190,18,60,.28)}
+.btn.green{background:#15803d;box-shadow:0 6px 16px rgba(21,128,61,.28)}
+.btn.ghost{background:var(--card);color:var(--ink);border:1.5px solid var(--line)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.special{cursor:pointer;transition:transform .15s}
+.special:hover{transform:translateY(-3px)}
+.badges{display:flex;flex-wrap:wrap;gap:8px}
+.badge2{padding:7px 12px;border-radius:999px;font-size:13px;font-weight:700;border:1px solid var(--line)}
+.badge2.got{background:#fef3c7;color:#92400e;border-color:#fbbf24}
+.badge2.lock{opacity:.55}
+.subj-tile{color:#22283a;border:0}
+.subj-tile .mut{color:#4b5563}
+.subj-tile h3{font-size:19px}
+.subj-tile h3:first-letter{font-size:28px}
+.subj-tile.india{background:linear-gradient(135deg,#e0e7ff,#fef9c3)}
+.subj-tile.world{background:linear-gradient(135deg,#dcfce7,#fef9c3)}
+.subj-tile.telangana{background:linear-gradient(135deg,#fce7f3,#ffedd5)}
+.subj-tile.ap{background:linear-gradient(135deg,#ede9fe,#fef3c7)}
+.subj-tile.env{background:linear-gradient(135deg,#ccfbf1,#fef9c3)}
+.optletter{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#1e1b4b;color:#fff;font-weight:900;font-size:14px;margin-right:10px;flex-shrink:0}
+.opt{display:flex;align-items:center}
+.hidden{display:none!important}
+.qwrap{max-width:860px;margin:0 auto}
+.qtop{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.timer{font-weight:900;font-size:18px;background:#fee2e2;color:#991b1b;padding:6px 14px;border-radius:999px}
+.timer.ok{background:#dcfce7;color:#166534}
+.pal{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0}
+.pal button{width:38px;height:38px;border-radius:10px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;font-weight:800;font-family:inherit}
+.pal button.cur{outline:3px solid #4338ca}
+.pal button.ans{background:#dcfce7;color:#166534}
+.pal button.mark{background:#ede9fe;color:#6d28d9}
+.pal button.skip{background:#fee2e2;color:#991b1b}
+.opt{display:block;width:100%;text-align:left;padding:14px 16px;margin:9px 0;border-radius:14px;border:2px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;font-family:inherit;font-size:16px;line-height:1.55}
+.opt:hover{border-color:#818cf8}
+.opt.sel{border-color:#4338ca;background:#eef2ff}
+body.dark .opt.sel{background:#232a5e}
+.opt.right{border-color:#16a34a;background:#dcfce7;color:#14532d}
+.opt.wrong{border-color:#dc2626;background:#fee2e2;color:#7f1d1d}
+.expl{border:1.5px solid #fbbf24;background:#fffbeb;border-radius:14px;padding:14px;margin-top:14px}
+body.dark .expl{background:#3a2f10;border-color:#92400e}
+.expl h4{margin:0 0 6px;color:#92400e}
+body.dark .expl h4{color:#fcd34d}
+.expl ul{margin:6px 0;padding-left:20px}
+.expl-points{margin:10px 0;padding-left:22px}
+.expl-points li{margin:7px 0;line-height:1.65}
+.trick{background:#ecfdf5;border:1px solid #86efac;border-radius:12px;padding:10px 12px;margin-top:10px;color:#065f46}
+body.dark .trick{background:#0f2e22;color:#a7f3d0}
+.ring{width:150px;height:150px;border-radius:50%;display:grid;place-items:center;margin:0 auto;font-weight:900;font-size:28px;color:#fff}
+.review{border:1px solid var(--line);border-radius:14px;padding:14px;margin:10px 0;background:var(--card)}
+.review .ansline{font-weight:700}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:grid;place-items:center;padding:16px;z-index:100}
+.modalbox{background:var(--card);color:var(--ink);border-radius:20px;padding:20px;max-width:520px;width:100%;max-height:90vh;overflow:auto}
+select{width:100%;padding:11px;border-radius:10px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font-family:inherit;font-size:15px;margin:6px 0 12px}
+label{font-weight:700;font-size:14px}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#111827;color:#fff;padding:12px 18px;border-radius:999px;z-index:200;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.3);max-width:92vw;text-align:center}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:150}
+footer{color:var(--mut);font-size:13px;text-align:center;margin-top:30px}
+@media(max-width:640px){
+.stats{grid-template-columns:repeat(2,1fr)}
+header .sub{display:none}
+header{position:static;padding:10px 12px}
+header .logo{font-size:17px}
+.hbtn{padding:6px 9px;font-size:13px;flex-shrink:0}
+main{padding:12px 8px 50px}
+.hero{padding:18px 14px;animation:none}
+.grid{grid-template-columns:1fr}
+.card{padding:12px}
+.opt{padding:13px 14px;font-size:15px}
+.quizmenu{top:0}
+}
+body{overflow-x:hidden}
+.quizmenu{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;gap:6px;align-items:center;flex-wrap:nowrap;background:linear-gradient(90deg,#1e1b4b,#7f1d1d);color:#fff;border:0;border-radius:0;padding:9px 12px}
+body.in-quiz header{display:none}
+#quizView{padding-top:40px}
+.quizmenu .timer{flex-shrink:0;font-size:14px;padding:4px 10px}
+.quizmenu b{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1;min-width:0}
+.quizmenu .mbtn{flex-shrink:0;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:999px;padding:7px 10px;cursor:pointer;font-family:inherit;font-weight:700;font-size:13px}
+.quizmenu .mbtn:hover{background:rgba(255,255,255,.35)}
+#drawerOverlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:240}
+#drawer{position:fixed;top:0;left:0;bottom:0;width:min(340px,86vw);background:var(--card);color:var(--ink);z-index:250;transform:translateX(-105%);transition:transform .25s ease;overflow-y:auto;padding:16px;box-shadow:10px 0 30px rgba(0,0,0,.3)}
+#drawer.open{transform:none}
+#confirmModal,#pauseModal{z-index:300}
+</style>
+</head>
+<body>
+<header>
+<button class="hbtn" id="hamburgerBtn" onclick="openDrawer()" title="Menu">☰</button>
+<div><div class="logo"><img src="icon-192.png" alt="MR logo" width="56" height="56"><span>All Subjects Quiz</span></div><div class="sub">17 సబ్జెక్ట్‌లు • 5864 ప్రశ్నలు • ముందు సబ్జెక్ట్ ఎంచుకోండి</div></div>
+<div class="sp"></div>
+<button class="hbtn" id="fontDown" title="ఫాంట్ చిన్నది">A−</button>
+<button class="hbtn" id="fontUp" title="ఫాంట్ పెద్దది">A+</button>
+<button class="hbtn" id="soundBtn" title="సౌండ్">🔊</button>
+<button class="hbtn" id="darkBtn" title="డార్క్ మోడ్">🌙</button>
+</header>
+<main>
+<section id="homeView">
+<div class="hero">
+<div class="stats">
+<div class="stat"><b id="stQ">5864</b><span>మొత్తం ప్రశ్నలు</span></div>
+<div class="stat"><b id="stScored">5778</b><span>స్కోర్ చేసేవి</span></div>
+<div class="stat"><b id="stOpen">86</b><span>స్కోర్‌లో లేనివి</span></div>
+<div class="stat"><b id="stT">205</b><span>టాపిక్‌లు</span></div>
+<div class="stat"><b id="stS">305</b><span>30-ప్రశ్నల సెట్‌లు</span></div>
+<div class="stat"><b id="stDone">0</b><span>పూర్తయిన సెట్‌లు</span></div>
+</div>
+</div>
+
+<div class="card" style="margin-top:14px">
+<h3 style="margin-top:0">🏆 నా డాష్‌బోర్డ్</h3>
+<div class="controls" style="margin:6px 0">
+<span>⭐ XP: <b id="xpVal">0</b></span><span>•</span><span>🔥 Streak: <b id="streakVal">0</b> రోజులు</span><span>•</span><span>✅ సరైనవి: <b id="accVal">0</b></span><span>•</span><span>📝 క్విజ్‌లు: <b id="quizVal">0</b></span>
+</div>
+<div class="pbar"><i id="overallBar" style="width:0%"></i></div>
+<div class="mut" id="overallTxt">మొత్తం పురోగతి: 0%</div>
+<div style="margin-top:12px"><b>బ్యాడ్జ్‌లు:</b><div class="badges" id="badgeBox" style="margin-top:8px"></div></div>
+<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+<div id="pausedBox"></div>
+<button class="btn ghost" id="myResultsBtn" onclick="showResults()">📊 నా ఫలితాలు</button>
+<button class="btn ghost" id="resetBtn">🗑️ పురోగతి రీసెట్</button>
+</div>
+</div>
+
+<h2>⚡ స్పెషల్ క్విజ్‌లు</h2>
+<div class="grid">
+<div class="card special" onclick="showRevision()"><h3>📚 రివిజన్</h3><p class="mut">తప్పిన ప్రశ్నలు Day 1 → Day 4 → Day 7 → Day 30 గ్యాప్‌లో మళ్ళీ వస్తాయి. సరైన సమాధానం ఇస్తే తర్వాతి దశకు, తప్పితే అదే దశలో మరుసటి రోజు.</p><p><span class="badge2 got" id="revDueBadge">ఈరోజు రివిజన్: 0</span></p><button class="btn">రివిజన్ చూడు →</button></div>
+<div class="card special" onclick="startSpecial('mixed')"><h3>🎲 మిక్స్‌డ్ క్విజ్ — 30 ప్రశ్నలు</h3><p class="mut">ఎంచుకున్న సబ్జెక్ట్ నుంచి (ఏదీ ఎంచుకోకపోతే అన్ని సబ్జెక్ట్‌ల నుంచి) యాదృచ్ఛికంగా 30. నిజమైన పరీక్షలా!</p><button class="btn">ప్రారంభించు →</button></div>
+<div class="card special" onclick="startSpecial('quick')"><h3>⚡ క్విక్ క్విజ్ — 10 ప్రశ్నలు</h3><p class="mut">కేవలం 10 నిమిషాల్లో వేగంగా రివిజన్. బస్సులో, టీ తాగుతూ!</p><button class="btn pink">ప్రారంభించు →</button></div>
+<div class="card special" onclick="startSpecial('daily')"><h3>📅 నేటి ఛాలెంజ్ — 30 ప్రశ్నలు</h3><p class="mut">ప్రతి రోజూ ఒకే సెట్ — స్నేహితులతో స్కోర్ పోల్చుకోండి!</p><button class="btn green">నేటి సెట్ →</button></div>
+<div class="card special" onclick="startSpecial('wrong')"><h3>❌ తప్పిన ప్రశ్నల రివిజన్</h3><p class="mut" id="wrongTxt">మీరు తప్పు చేసిన ప్రశ్నలు మాత్రమే. వీటిని సరిచేస్తేనే టాపర్!</p><button class="btn">రివిజన్ →</button></div>
+<div class="card special" onclick="startSpecial('book')"><h3>🔖 బుక్‌మార్క్ చేసినవి</h3><p class="mut" id="bookTxt">మీరు ⭐ పెట్టిన ముఖ్యమైన ప్రశ్నలు.</p><button class="btn pink">చూడండి →</button></div>
+</div>
+
+<h2>1️⃣ Step 1 — Ee subject rayali anukuntunnavu?</h2>
+<p class="mut">ముందు ఒక సబ్జెక్ట్ మాత్రమే నొక్కండి. సబ్జెక్ట్ ఎంచుకునే వరకు కింద ఏ చాప్టర్/టాపిక్ లిస్ట్ కనిపించదు. సబ్జెక్ట్ ఎంచుకున్నాక ఆ సబ్జెక్ట్ చాప్టర్లు మాత్రమే చాప్టర్ వారీగా వస్తాయి. అన్ని సబ్జెక్ట్‌లు కలిపి మిక్స్‌డ్ క్విజ్ కావాలంటే “All subjects — Mixed” నొక్కండి — దానిలో చాప్టర్ లిస్ట్ ఉండదు, స్పెషల్ క్విజ్‌లు మాత్రమే పనిచేస్తాయి.</p>
+<div class="grid" id="subjectGrid"></div>
+<h2 id="step2Head">2️⃣ Step 2 — చాప్టర్ ఎంచుకోండి, సెట్ ఎంచుకోండి</h2>
+<div class="card" id="chosenBar" style="margin-bottom:12px"><b id="chosenTxt">సబ్జెక్ట్ ఇంకా ఎంచుకోలేదు — పైన ఒక సబ్జెక్ట్ నొక్కండి</b> <button class="btn ghost" style="padding:8px 12px;margin-left:8px" onclick="clearSubject()">↩️ సబ్జెక్ట్‌లు చూపు</button></div>
+<div class="controls" id="searchWrap">
+<input type="search" id="searchBox" placeholder="🔍 ఈ సబ్జెక్ట్‌లో చాప్టర్ వెతకండి...">
+</div>
+<div class="grid" id="topicGrid"></div>
+
+</section>
+
+<section id="quizView" class="hidden qwrap">
+<div class="card quizmenu" id="quizMenuBar">
+<b id="liveCounts">📝 0 / 0</b>
+<span class="timer ok" id="timerBox" style="display:none">⏱️ <span id="timerTxt">30:00</span></span>
+<div style="flex:1"></div>
+<button class="mbtn" onclick="backToSubject()">⬅️ వెనక</button>
+<button class="mbtn" id="pauseBtn" onclick="pauseQuiz()">⏸️ పాజ్</button>
+<button class="mbtn" onclick="openDrawer()">☰ Menu</button>
+</div>
+<div class="pbar"><i id="qBar" style="width:0%"></i></div>
+<div class="card" style="margin-top:12px">
+<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+<span class="badge2" id="qNoBadge">Q1</span>
+<span class="badge2" id="qExamBadge"></span>
+<button class="btn ghost" id="bookBtn" style="padding:8px 12px">☆ బుక్‌మార్క్</button>
+<span class="mut" id="qTypeBadge"></span>
+</div>
+<div id="langToggle" style="display:flex;gap:8px;align-items:center;margin:12px 0 0;flex-wrap:wrap">
+<span class="mut" style="font-weight:700">🌐 Choose language:</span>
+<button class="chip" id="langTeBtn" onclick="setLang('te')">తెలుగు</button>
+<button class="chip" id="langEnBtn" onclick="setLang('en')">English</button>
+<span class="mut" id="langNote"></span>
+</div>
+<div id="qStem" style="font-size:1.2em;font-weight:700;line-height:1.8;margin:14px 0 18px;white-space:pre-wrap"></div>
+<div id="qOpts"></div>
+<div id="qExpl" class="hidden"></div>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+<button class="btn ghost" id="prevBtn">⬅️ వెనక</button>
+<button class="btn" id="nextBtn">తర్వాత ➡️</button>
+<button class="btn pink" id="markBtn">🚩 రివ్యూ కోసం గుర్తు</button>
+<button class="btn green" id="submitBtn">✅ సబ్మిట్ & రిజల్ట్</button>
+</div>
+<p class="mut" id="modeNote"></p>
+</div>
+</section>
+
+<section id="resultView" class="hidden qwrap">
+<div class="card" style="text-align:center">
+<h2 style="margin-top:0" id="resHead">🎉 ఫలితం</h2>
+<div class="ring" id="scoreRing">0%</div>
+<p id="resMsg" style="font-size:18px;font-weight:700"></p>
+<p class="mut" id="resDetail"></p>
+<div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px">
+<button class="btn" onclick="showReview()">📖 అన్ని ప్రశ్నలు + వివరణ చూడు</button>
+<button class="btn pink" onclick="retakeQuiz()">🔄 మళ్ళీ రాయి</button>
+<button class="btn green" onclick="goHome()">🏠 హోమ్</button>
+<button class="btn ghost" onclick="shareResult()">📤 స్కోర్ షేర్</button>
+</div>
+</div>
+<div id="reviewBox" class="hidden"></div>
+</section>
+
+<section id="revisionView" class="hidden">
+<div class="card">
+<h2 style="margin-top:0">📚 రివిజన్ — Spaced Repetition</h2>
+<p class="mut">తప్పు చేసిన ప్రతి ప్రశ్న ఇక్కడికి వస్తుంది. సరైన సమాధానం ఇస్తే తర్వాతి దశకు వెళ్తుంది; తప్పితే అదే దశలో మరుసటి రోజు మళ్ళీ వస్తుంది. దశలు: <b>Day 1 → Day 4 → Day 7 → Day 30 → Mastered</b> (Day 30లో సరైన సమాధానం ఇస్తే జాబితా నుంచి తొలగిపోతుంది).</p>
+<p class="mut">ఈ రివిజన్ జాబితా ఈ ఫోన్/బ్రౌజర్‌లో మాత్రమే ఉంటుంది — browser data clear chesthe pothundi.</p>
+<button class="btn ghost" onclick="goHome()">⬅️ హోమ్</button>
+</div>
+<div id="revStages"></div>
+</section>
+
+<section id="resultsView" class="hidden">
+<div class="card">
+<h2 style="margin-top:0">📊 నా ఫలితాలు</h2>
+<p class="mut">ఈ ఫలితాలు ఈ ఫోన్/బ్రౌజర్‌లో మాత్రమే ఉంటాయి — browser data clear chesthe pothayi.</p>
+<div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn ghost" onclick="goHome()">⬅️ హోమ్</button><button class="btn pink" id="clearResultsBtn" onclick="clearResults()">🗑️ చరిత్ర తొలగించు</button></div>
+</div>
+<div id="resSummary" style="margin-top:14px"></div>
+<div id="resList" style="margin-top:14px"></div>
+</section>
+</main>
+<div id="startModal" class="modal hidden"><div class="modalbox">
+<h3 id="modalTitle" style="margin-top:0">క్విజ్ ప్రారంభించు</h3>
+<p class="mut" id="modalInfo"></p>
+<label>మోడ్</label>
+<select id="modeSel"><option value="practice">📖 ప్రాక్టీస్ మోడ్ — వెంటనే సమాధానం + వివరణ</option><option value="exam">📝 పరీక్ష మోడ్ — చివర్లోనే రిజల్ట్, టైమర్</option></select>
+<label>టైమర్ (పరీక్ష మోడ్‌కి మాత్రమే)</label>
+<select id="timeSel"><option value="30">30 నిమిషాలు (30 ప్రశ్నలకు)</option><option value="15">15 నిమిషాలు</option><option value="45">45 నిమిషాలు</option><option value="0">టైమర్ లేదు</option></select>
+<label><input type="checkbox" id="shuffleQ" checked> ప్రశ్నల క్రమం మార్చు (Shuffle)</label><br>
+<label><input type="checkbox" id="shuffleO" checked> ఆప్షన్ల క్రమం మార్చు (Shuffle)</label><br>
+<label><input type="checkbox" id="negMark"> నెగెటివ్ మార్కింగ్ (−0.25, పరీక్ష మోడ్‌లో)</label>
+<div style="display:flex;gap:10px;margin-top:16px"><button class="btn" id="startBtn" style="flex:1">🚀 ప్రారంభించు</button><button class="btn ghost" onclick="closeModal()">వద్దు</button></div>
+</div></div>
+<div id="confirmModal" class="modal hidden"><div class="modalbox">
+<h3 id="confirmTitle" style="margin-top:0"></h3>
+<div id="confirmBody" class="mut"></div>
+<div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap"><button class="btn green" id="confirmOkBtn" style="flex:1;padding:14px"></button><button class="btn ghost" id="confirmCancelBtn" style="flex:1;padding:14px" onclick="closeConfirm()">వద్దు</button></div>
+</div></div>
+<div id="pauseModal" class="modal hidden"><div class="modalbox">
+<h3 style="margin-top:0">⏸️ క్విజ్ పాజ్ అయ్యింది</h3>
+<p class="mut" id="pauseTime" style="font-weight:700;font-size:17px"></p>
+<p class="mut" id="pauseCounts"></p>
+<p class="mut">టైమర్ ఆగిపోయింది — సమయం తగ్గదు, సమాధానాలు భద్రంగా ఉన్నాయి.</p>
+<div style="display:flex;flex-direction:column;gap:10px;margin-top:16px">
+<button class="btn green" style="width:100%;padding:14px" onclick="resumeQuiz()">▶️ కొనసాగించు</button>
+<button class="btn" id="pauseSaveBtn" style="width:100%;padding:14px" onclick="pauseSaveExit()">💾 సేవ్ చేసి తర్వాత రాస్తాను</button>
+<button class="btn pink" style="width:100%;padding:14px" onclick="pauseDiscard()">❌ క్విజ్ వదిలేయి</button>
+</div>
+<p class="mut" id="pauseNote" style="margin-top:12px">📱 ఫోన్ వెనక బటన్ నొక్కితే ఈ విండో మూసుకుని పాజ్ అయిన క్విజ్‌కే వస్తారు (టైమర్ ఆగే ఉంటుంది).</p>
+</div></div>
+<div id="drawerOverlay" class="hidden" onclick="closeDrawer()"></div>
+<aside id="drawer" aria-label="Menu">
+<div style="display:flex;align-items:center;gap:10px"><b style="font-size:18px">☰ Menu</b><div style="flex:1"></div><button class="btn ghost" onclick="closeDrawer()">✖️</button></div>
+<div id="drawerContent"></div>
+</aside>
+<div id="toast" class="toast hidden"></div>
+<canvas id="confetti"></canvas>
+<script src="questions.js"></script>
+<script src="concepts.js"></script>
+<script src="explanations.js"></script>
+<script>
+const $=s=>document.querySelector(s);
+const $$=s=>document.querySelectorAll(s);
+const TOPICS=window.TOPICS||[];
+const CONCEPTS=window.CONCEPTS||{};
+const EXPLANATIONS=window.EXPLANATIONS||{};
+const CMAP=window.CONCEPT_MAP||{};
+function topicConcept(id){return CONCEPTS[id]||CONCEPTS[CMAP[id]]||null}
+function secClass(sec){let cls=['india','world','telangana','ap','env'];let h=0;for(let ch of sec)h=(h*31+ch.charCodeAt(0))%997;return cls[h%cls.length]}
+function secShort(sec){return sec}
+function qid(topic,q){return topic.id+'#'+q.n}
+function chunk(arr,n){let o=[];for(let i=0;i<arr.length;i+=n)o.push(arr.slice(i,i+n));return o}
+function setsOf(topic){return chunk(topic.q,30)}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+let store={progress:{},book:[],wrong:[],xp:0,quizzes:0,correct:0,answered:0,streakDates:[],settings:{dark:false,sound:true,fs:0}};
+try{let s=JSON.parse(localStorage.getItem('allSubjectsQuizV1')||'null');
+if(s){store={...store,...s,settings:{...store.settings,...(s.settings||{})}}}}
+catch(e){}
+function save(){localStorage.setItem('allSubjectsQuizV1',JSON.stringify(store))}
+/* ---- Spaced revision (key: allSubjectsRevisionV1) ---- */
+const REV_KEY='allSubjectsRevisionV1';
+let revision={};
+try{revision=JSON.parse(localStorage.getItem(REV_KEY)||'{}')||{}}catch(e){revision={}}
+function saveRevision(){try{localStorage.setItem(REV_KEY,JSON.stringify(revision))}catch(e){}}
+function revDateStr(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+function revAddDays(dateStr,n){let p=dateStr.split('-');let d=new Date(+p[0],+p[1]-1,+p[2]);d.setDate(d.getDate()+n);return revDateStr(d)}
+function revToday(){return revDateStr(new Date())}
+function revAdd(id,subj,todayOverride){
+if(revision[id])return false;
+let today=todayOverride||revToday();
+revision[id]={stage:1,due:revAddDays(today,1),subj:subj||'',added:today};
+saveRevision();return true;
+}
+function revAdvance(id,todayOverride){
+let r=revision[id];if(!r)return 0;
+let today=todayOverride||revToday();
+let next={1:4,4:7,7:30}[r.stage];
+if(next){r.stage=next;r.due=revAddDays(today,next);saveRevision();return next}
+delete revision[id];saveRevision();return 0;
+}
+function revFail(id,todayOverride){
+let r=revision[id];if(!r)return;
+let today=todayOverride||revToday();
+r.due=revAddDays(today,1);saveRevision();
+}
+function revDueCount(){let t=revToday(),n=0;for(let id in revision){if(revision[id].due<=t)n++}return n}
+function findQById(id){
+let parts=String(id).split('#');if(parts.length<2)return null;
+let t=TOPICS.find(x=>x.id===parts[0]);if(!t)return null;
+let q=t.q.find(x=>x.n===+parts[1]);if(!q)return null;
+return{topic:t,q:q};
+}
+/* ---- Per-device results history (key: allSubjectsResultsV1) ---- */
+const RES_KEY='allSubjectsResultsV1';
+function loadResults(){try{let a=JSON.parse(localStorage.getItem(RES_KEY)||'[]');return Array.isArray(a)?a:[]}catch(e){return[]}}
+function saveResult(rec){
+let arr=loadResults();arr.unshift(rec);if(arr.length>100)arr.length=100;
+try{localStorage.setItem(RES_KEY,JSON.stringify(arr))}catch(e){}
+}
+/* ---- In-app confirm modal (replaces the native browser confirm dialog,
+   which returns undefined / is blocked in sandboxed iframes and mobile
+   WebViews, silently swallowing the user's action) ---- */
+let confirmAction=null;
+function showConfirm(title,bodyHtml,okText,onOk,cancelText){
+$('#confirmTitle').textContent=title;
+$('#confirmBody').innerHTML=bodyHtml;
+$('#confirmOkBtn').textContent=okText;
+$('#confirmCancelBtn').textContent=cancelText||'వద్దు';
+confirmAction=onOk;
+$('#confirmModal').classList.remove('hidden');
+}
+function closeConfirm(){$('#confirmModal').classList.add('hidden');confirmAction=null}
+$('#confirmOkBtn').onclick=()=>{let f=confirmAction;closeConfirm();if(f)f()};
+function clearResults(){
+showConfirm('ఫలితాల చరిత్ర తొలగించాలా?','<p>నా ఫలితాల చరిత్ర అంతా తొలగిపోతుంది. క్విజ్ పురోగతి (XP, పూర్తయిన సెట్‌లు) అలాగే ఉంటుంది.</p>','🗑️ తొలగించు',()=>{
+try{localStorage.removeItem(RES_KEY)}catch(e){}
+renderResults();toast('🗑️ ఫలితాల చరిత్ర తొలగించారు');
+});
+}
+function toast(msg){let t=$('#toast');t.textContent=msg;t.classList.remove('hidden');setTimeout(()=>t.classList.add('hidden'),3200)}
+function beep(ok){if(!store.settings.sound)return;try{let ctx=new (window.AudioContext||window.webkitAudioContext)();let o=ctx.createOscillator(),g=ctx.createGain();o.type='sine';o.frequency.value=ok?880:220;g.gain.value=.08;o.connect(g);g.connect(ctx.destination);o.start();setTimeout(()=>{o.stop();ctx.close()},180)}
+catch(e){}}
+function todayStr(){let d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate()}
+function streakCount(){let dates=[...new Set(store.streakDates)].sort();if(!dates.length)return 0;let cur=new Date(),n=0;let ds=new Set(dates);while(true){let k=cur.getFullYear()+'-'+(cur.getMonth()+1)+'-'+cur.getDate();if(ds.has(k)){n++;cur.setDate(cur.getDate()-1)}else break}return n}
+const BADGES=[
+{id:'first',name:'🌱 మొదటి అడుగు',cond:()=>store.quizzes>=1},
+{id:'ten',name:'🔥 10 క్విజ్‌లు',cond:()=>store.quizzes>=10},
+{id:'hundred',name:'💯 100 ప్రశ్నలు',cond:()=>store.answered>=100},
+{id:'fiveh',name:'🏅 500 ప్రశ్నలు',cond:()=>store.answered>=500},
+{id:'allsets',name:'👑 20 సెట్‌లు పూర్తి',cond:()=>Object.values(store.progress).filter(p=>p.done).length>=20},
+{id:'perfect',name:'🎯 పర్ఫెక్ట్ స్కోర్',cond:()=>store.perfect},
+{id:'xp1000',name:'⭐ 1000 XP',cond:()=>store.xp>=1000},
+];
+let currentSubject=null;
+let allMixed=false;
+function subjStats(){
+let m={};
+TOPICS.forEach(t=>{if(!m[t.subj])m[t.subj]={total:0,scored:0,open:0,topics:0,sets:0};let s=m[t.subj];s.topics++;s.sets+=setsOf(t).length;t.q.forEach(q=>{s.total++;if(q.t==='mcq')s.scored++;else s.open++})});
+return m;
+}
+function renderSubjectGrid(){
+let m=subjStats();
+let order=[];TOPICS.forEach(t=>{if(!order.includes(t.subj))order.push(t.subj)});
+let gt={total:0,scored:0,open:0,topics:0,sets:0};Object.values(m).forEach(s=>{gt.total+=s.total;gt.scored+=s.scored;gt.open+=s.open;gt.topics+=s.topics;gt.sets+=s.sets});
+const SUBJ_ICON={'Polity':'🏛️','History':'🏺','Telangana Movement':'✊','Telangana History':'🏰','Telangana Culture':'🎭','Telangana Geography':'🗺️','Telangana Economy & Schemes':'💰','Telangana Government & Administration':'🏛️','Geography':'🌍','Environment':'🌿','Economy':'💰','Current Affairs & GK':'📰','General Science':'🔬','Biology':'🧬','Physics':'⚛️','Chemistry':'🧪','Reasoning & Quantitative':'🧩','English':'🔤','Telugu':'✍️','AP Specific':'🏯','Education':'🎓','Ethics/Society':'⚖️'};
+let card=(name,s,all)=>`<div class="card topic ${secClass(name)} subj-tile" style="cursor:pointer" onclick="chooseSubject(${all?'null':'this.dataset.subj'})" data-subj="${esc(name)}"><h3 style="margin-top:6px">${all?'🌐 All subjects — Mixed':(SUBJ_ICON[name]||'📚')+' '+esc(name)}</h3><div><b>${s.total} ప్రశ్నలు</b> • స్కోర్: ${s.scored} • స్కోర్‌లో లేనివి: ${s.open}</div><div class="mut">${s.topics} చాప్టర్లు • ${s.sets} సెట్‌లు</div><div style="margin-top:10px"><button class="btn">${all?'మిక్స్‌డ్ మోడ్ →':'ఈ సబ్జెక్ట్ మాత్రమే →'}</button></div></div>`;
+$('#subjectGrid').innerHTML=card('All subjects',gt,true)+order.map(s=>card(s,m[s],false)).join('');
+}
+function chooseSubject(s){if(s===null){allMixed=true;currentSubject=null}else{allMixed=false;currentSubject=s}renderHome();if(!navFromPop)pushView('subject',currentSubject,allMixed);let el=$('#chosenBar');if(el&&el.scrollIntoView)el.scrollIntoView({behavior:'smooth',block:'start'})}
+function clearSubject(){allMixed=false;currentSubject=null;renderHome();syncHomeState();let el=$('#subjectGrid');if(el&&el.scrollIntoView)el.scrollIntoView({behavior:'smooth',block:'start'})}
+function renderHome(){
+renderPausedList();
+let totalQ=TOPICS.reduce((a,t)=>a+t.q.length,0);
+let scoredQ=TOPICS.reduce((a,t)=>a+t.q.filter(q=>q.t==='mcq').length,0);
+let openQ=totalQ-scoredQ;
+let allSets=TOPICS.reduce((a,t)=>a+setsOf(t).length,0);
+let doneSets=Object.values(store.progress).filter(p=>p.done).length;
+$('#stQ').textContent=totalQ;$('#stScored').textContent=scoredQ;$('#stOpen').textContent=openQ;$('#stT').textContent=TOPICS.length;$('#stS').textContent=allSets;$('#stDone').textContent=doneSets;
+$('#xpVal').textContent=store.xp;$('#streakVal').textContent=streakCount();$('#accVal').textContent=store.correct;$('#quizVal').textContent=store.quizzes;
+let pct=allSets?Math.round(doneSets/allSets*100):0;$('#overallBar').style.width=pct+'%';$('#overallTxt').textContent='మొత్తం పురోగతి: '+pct+'% ('+doneSets+' / '+allSets+' సెట్‌లు)';
+$('#badgeBox').innerHTML=BADGES.map(b=>`<span class="badge2 ${b.cond()?'got':'lock'}">${b.cond()?'✅ ':'🔒 '}${esc(b.name)}</span>`).join('');
+let rdb=$('#revDueBadge');if(rdb)rdb.textContent='ఈరోజు రివిజన్: '+revDueCount();
+$('#wrongTxt').textContent='మీరు తప్పు చేసిన ప్రశ్నలు మాత్రమే ('+store.wrong.length+' ఉన్నాయి). వీటిని సరిచేస్తేనే టాపర్!';
+$('#bookTxt').textContent='మీరు ⭐ పెట్టిన ముఖ్యమైన ప్రశ్నలు ('+store.book.length+' ఉన్నాయి).';
+$('#chosenTxt').textContent=currentSubject?('ఎంచుకున్న సబ్జెక్ట్: '+currentSubject+' — ఈ సబ్జెక్ట్ చాప్టర్లు మాత్రమే చాప్టర్ వారీగా కింద ఉన్నాయి'):allMixed?'All subjects — Mixed మోడ్: చాప్టర్ లిస్ట్ లేదు, స్పెషల్ క్విజ్‌లు మాత్రమే — చాప్టర్లు చూడాలంటే ఒక సబ్జెక్ట్ ఎంచుకోండి':'సబ్జెక్ట్ ఇంకా ఎంచుకోలేదు — పైన ఒక సబ్జెక్ట్ నొక్కండి, అప్పుడు ఆ సబ్జెక్ట్ చాప్టర్లు మాత్రమే ఇక్కడ వస్తాయి';
+$('#step2Head').textContent=currentSubject?(currentSubject+' — చాప్టర్లు (Chapter-wise)'):allMixed?'All subjects — Mixed':'Step 2 — చాప్టర్ ఎంచుకోండి';
+$('#step2Head').style.display=(currentSubject||allMixed)?'':'none';
+$('#searchWrap').style.display=currentSubject?'':'none';
+renderSubjectGrid();
+if(!currentSubject){
+$('#topicGrid').innerHTML=allMixed?'<div class="card"><h3 style="margin-top:0">🌐 All subjects — Mixed</h3><p class="mut">ఈ మోడ్‌లో అన్ని సబ్జెక్ట్‌ల చాప్టర్ లిస్ట్ చూపించము. పైన ఉన్న స్పెషల్ క్విజ్‌లు (Mixed 30 / Quick 10 / Daily 30 / Wrong / Bookmark) అన్ని సబ్జెక్ట్‌ల నుంచి వస్తాయి. చాప్టర్ వారీగా చదవాలంటే పైన ఒక సబ్జెక్ట్ నొక్కండి.</p><button class="btn" onclick="clearSubject()">↩️ సబ్జెక్ట్ ఎంచుకోండి</button></div>':'<div class="card"><p class="mut" style="margin:0">👆 పైన ఒక సబ్జెక్ట్ ఎంచుకున్నాకే ఇక్కడ ఆ సబ్జెక్ట్ చాప్టర్లు వస్తాయి. ఇప్పుడు ఏ చాప్టర్ లిస్ట్ చూపించడం లేదు.</p></div>';
+return;
+}
+let q=$('#searchBox').value.trim().toLowerCase();
+let html='';
+TOPICS.forEach(t=>{
+if(t.subj!==currentSubject)return;
+if(q&&!(t.te.toLowerCase().includes(q)||t.subj.toLowerCase().includes(q)))return;
+let sets=setsOf(t);
+let done=sets.filter((s,i)=>store.progress[t.id+'|'+i]?.done).length;
+let best=sets.map((s,i)=>store.progress[t.id+'|'+i]?.best||0);
+let bestAvg=best.length?Math.round(best.reduce((a,b)=>a+b,0)/best.length):0;
+let sc=t.q.filter(x=>x.t==='mcq').length,op=t.q.length-sc;
+html+=`<div class="card topic ${secClass(t.subj)}"><div class="meta">${esc(t.subj)}</div>
+<h3 style="margin-top:6px">${esc(t.te)}</h3>
+<div style="margin-top:8px"><b>${t.q.length} ప్రశ్నలు</b> (స్కోర్: ${sc} • స్కోర్‌లో లేనివి: ${op}) • ${sets.length} సెట్(లు) • పూర్తి: ${done}/${sets.length} • బెస్ట్ సగటు: ${bestAvg}%</div>
+<div class="pbar"><i style="width:${sets.length?done/sets.length*100:0}%"></i></div>
+<div>${sets.map((s,i)=>{let p=store.progress[t.id+'|'+i];let from=s[0].n,to=s[s.length-1].n;return `<button class="setbtn ${p?.done?'done':''}" onclick="openSet('${t.id}',${i})">సెట్ ${i+1} (${from}–${to})${p?.done?' ✅ '+p.best+'%':''}</button>`}).join('')}</div></div>`;
+});
+$('#topicGrid').innerHTML=html||'<div class="card">ఏ టాపిక్ దొరకలేదు. వెతుకులాట మార్చి చూడండి లేదా వేరే సబ్జెక్ట్ ఎంచుకోండి.</div>';
+}
+$('#searchBox').oninput=renderHome;
+function applySettings(){document.body.classList.toggle('dark',!!store.settings.dark);$('#darkBtn').textContent=store.settings.dark?'☀️':'🌙';$('#soundBtn').textContent=store.settings.sound?'🔊':'🔇';document.body.style.fontSize=(16+store.settings.fs*2)+'px'}
+$('#darkBtn').onclick=()=>{store.settings.dark=!store.settings.dark;save();applySettings()};
+$('#soundBtn').onclick=()=>{store.settings.sound=!store.settings.sound;save();applySettings();toast(store.settings.sound?'సౌండ్ ఆన్':'సౌండ్ ఆఫ్')};
+$('#fontUp').onclick=()=>{store.settings.fs=Math.min(3,store.settings.fs+1);save();applySettings()};
+$('#fontDown').onclick=()=>{store.settings.fs=Math.max(-1,store.settings.fs-1);save();applySettings()};
+$('#resetBtn').onclick=()=>{
+showConfirm('పురోగతి రీసెట్ చేయాలా?','<p>XP, స్ట్రీక్, పూర్తయిన సెట్‌లు — పురోగతి అంతా తొలగిపోతుంది. ఈ చర్యను వెనక్కి తీసుకోలేరు.</p>','🗑️ అంతా తొలగించు',()=>{
+localStorage.removeItem('allSubjectsQuizV1');location.reload();
+});
+};
+/* ---- View-stack back navigation (history.pushState + popstate) ---- */
+let navFromPop=false;
+function pushView(view,subject,mixed){try{history.pushState({view:view,subject:subject||null,mixed:!!mixed},'')}catch(e){}}
+function syncHomeState(){try{if(history.state&&history.state.view&&history.state.view!=='home')history.replaceState({view:'home',subject:null,mixed:false},'')}catch(e){}}
+function showHomeUI(){document.body.classList.remove('in-quiz');hideAll();$('#homeView').classList.remove('hidden');renderHome();window.scrollTo(0,0)}
+function showSubjectUI(){document.body.classList.remove('in-quiz');hideAll();$('#homeView').classList.remove('hidden');renderHome();window.scrollTo(0,0)}
+function showQuizUI(){document.body.classList.add('in-quiz');hideAll();$('#quizView').classList.remove('hidden');window.scrollTo(0,0)}
+function showResultUI(){document.body.classList.remove('in-quiz');hideAll();$('#resultView').classList.remove('hidden');window.scrollTo(0,0)}
+function showRevisionUI(){document.body.classList.remove('in-quiz');hideAll();$('#revisionView').classList.remove('hidden');renderRevision();window.scrollTo(0,0)}
+function showResultsUI(){document.body.classList.remove('in-quiz');hideAll();$('#resultsView').classList.remove('hidden');renderResults();window.scrollTo(0,0)}
+function leaveQuiz(saveIt){if(!quiz)return;clearInterval(quiz.timerId);if(saveIt&&!quiz.submitted)saveResume();quiz=null}
+window.addEventListener('popstate',function(e){
+let st=e&&e.state;
+navFromPop=true;
+try{
+if(!st||st.view==='home'){leaveQuiz(true);currentSubject=null;allMixed=false;showHomeUI()}
+else if(st.view==='subject'){leaveQuiz(true);currentSubject=st.subject||null;allMixed=!!st.mixed;showSubjectUI()}
+else if(st.view==='revision'){leaveQuiz(true);showRevisionUI()}
+else if(st.view==='results'){leaveQuiz(true);showResultsUI()}
+else if(st.view==='quiz'){if(quiz&&!quiz.submitted){showQuizUI()}else{currentSubject=st.subject||null;allMixed=!!st.mixed;showSubjectUI()}}
+else if(st.view==='result'){if(quiz&&quiz.result){showResultUI()}else{currentSubject=st.subject||null;allMixed=!!st.mixed;showSubjectUI()}}
+}catch(err){}
+/* Back button while the pause overlay is open: close the overlay and stay on
+   the paused quiz (timer stays frozen) — never silently discard the quiz.
+   Forward-navigation back to the 'paused' state re-opens the overlay. */
+let pm=$('#pauseModal');
+if(st&&st.view==='paused'&&quiz&&quiz.paused){if(pm)pm.classList.remove('hidden')}
+else if(pm)pm.classList.add('hidden');
+syncPauseBtn();
+navFromPop=false;
+});
+function backToSubject(){
+if(quiz&&quiz.revMode){
+let hadState=history.state&&history.state.view==='quiz';
+if(hadState){history.back();return}
+leaveQuiz(false);showRevisionUI();return;
+}
+let hadState=history.state&&history.state.view==='quiz';
+if(hadState){history.back();return}
+leaveQuiz(true);showSubjectUI();
+}
+function goHome(){showHomeUI();syncHomeState()}
+function hideAll(){$('#homeView').classList.add('hidden');$('#quizView').classList.add('hidden');$('#resultView').classList.add('hidden');let rv=$('#revisionView');if(rv)rv.classList.add('hidden');let rs=$('#resultsView');if(rs)rs.classList.add('hidden')}
+function closeModal(){$('#startModal').classList.add('hidden')}
+let pendingQuiz=null;
+function openSet(topicId,setIdx){
+let t=TOPICS.find(x=>x.id===topicId);let s=setsOf(t)[setIdx];
+pendingQuiz={title:t.te+' — సెట్ '+(setIdx+1),topicId,setIdx,questions:s,topic:t,key:topicId+'|'+setIdx};
+$('#modalTitle').textContent=pendingQuiz.title;$('#modalInfo').textContent=s.length+' ప్రశ్నలు • '+t.te+' ('+secShort(t.sec)+')';
+$('#startModal').classList.remove('hidden');
+}
+function seededRandom(seed){let x=seed;return function(){x=(x*9301+49297)%233280;return x/233280}}
+function startSpecial(kind){
+let pool=currentSubject?TOPICS.filter(t=>t.subj===currentSubject):TOPICS;
+let all=pool.flatMap(t=>t.q.map(q=>({topic:t,q})));
+let qs=[],title='';
+if(kind==='mixed'){qs=[...all].sort(()=>Math.random()-.5).slice(0,30);title='🎲 మిక్స్‌డ్ క్విజ్ — 30 ప్రశ్నలు'}
+else if(kind==='quick'){qs=[...all].sort(()=>Math.random()-.5).slice(0,10);title='⚡ క్విక్ క్విజ్ — 10 ప్రశ్నలు'}
+else if(kind==='daily'){let d=new Date();let seed=d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate();let r=seededRandom(seed);qs=[...all].sort(()=>r()-.5).slice(0,30);title='📅 నేటి ఛాలెంజ్ — '+d.toLocaleDateString('te-IN')}
+else if(kind==='wrong'){
+if(!store.wrong.length){toast('తప్పిన ప్రశ్నలు ఇంకా లేవు. ముందు ఒక క్విజ్ రాయండి!');return}
+qs=store.wrong.map(id=>{for(let t of TOPICS){let q=t.q.find(x=>qid(t,x)===id);if(q)return{topic:t,q}}}).filter(Boolean).slice(0,30);title='❌ తప్పిన ప్రశ్నల రివిజన్'}
+else if(kind==='book'){
+if(!store.book.length){toast('బుక్‌మార్క్ చేసిన ప్రశ్నలు లేవు. ప్రశ్న వద్ద ☆ నొక్కండి!');return}
+qs=store.book.map(id=>{for(let t of TOPICS){let q=t.q.find(x=>qid(t,x)===id);if(q)return{topic:t,q}}}).filter(Boolean).slice(0,30);title='🔖 బుక్‌మార్క్ రివిజన్'}
+if(currentSubject){qs=qs.filter(x=>x.topic.subj===currentSubject);if(!qs.length){toast('ఈ సబ్జెక్ట్‌లో ఆ రకం ప్రశ్నలు లేవు.');return}title+=' — '+currentSubject}
+pendingQuiz={title,questions:qs,topic:qs[0]?.topic,key:null,special:kind};
+$('#modalTitle').textContent=title;$('#modalInfo').textContent=qs.length+' ప్రశ్నలు • ప్రాక్టీస్ మోడ్‌లో వివరణతో చదవడం మంచిది.';
+$('#startModal').classList.remove('hidden');
+}
+$('#startBtn').onclick=()=>{
+if(!pendingQuiz)return;
+let mode=$('#modeSel').value,mins=parseInt($('#timeSel').value);
+let qs=pendingQuiz.questions.map(x=>(x.q?{...x}:{topic:pendingQuiz.topic,q:x}));
+if($('#shuffleQ').checked)qs.sort(()=>Math.random()-.5);
+if($('#shuffleO').checked)qs.forEach(item=>{let q=item.q;if(q.t==='mcq'&&q.a!=null){let pairs=q.o.map((o,i)=>({o,oe:q.oe?q.oe[i]:undefined,ok:i===q.a}));pairs.sort(()=>Math.random()-.5);let nq={...q,o:pairs.map(p=>p.o),a:pairs.findIndex(p=>p.ok)};if(q.oe)nq.oe=pairs.map(p=>p.oe);item.q=nq}});
+startQuiz({...pendingQuiz,questions:qs,mode,mins,neg:$('#negMark').checked});
+closeModal();
+};
+</script>
+<script>
+let quiz=null,lastQuiz=null;
+function formatExplPoints(text){
+let sents=String(text).split(/(?<=[.!?])\s+/).map(s=>s.trim()).filter(Boolean);
+return '<ul class="expl-points">'+sents.map(s=>{
+let e=esc(s).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>');
+return '<li>'+e+'</li>';
+}).join('')+'</ul>';
+}
+function explHTML(item){
+let q=item.q,t=item.topic;
+let perQ=EXPLANATIONS[qid(t,q)];
+let html='<div class="expl">';
+if(q.t==='open'){
+let badge=(q.openNote||'').includes('book key scan')?'book key scan lo kanipinchaledu — score lo ledu':'search chesina key dorakaledu — score lo ledu';
+html+='<h4>⚠️ '+badge+'</h4>';
+if(q.openNote)html+='<p>'+esc(q.openNote)+'</p>';
+html+='<p class="mut">ఈ ప్రశ్న స్కోర్‌లో లేదు — సమాధానం ఊహించి ఇవ్వలేదు. మీ బుక్/అధికారిక కీలో చూసుకోండి.</p>';
+}else{
+html+='<h4>✅ సరైన సమాధానం: '+esc(q.o[q.a])+'</h4>';
+if(perQ)html+='<h4>📖 ఈ ప్రశ్న వివరణ</h4>'+formatExplPoints(perQ);
+}
+return html+'</div>';
+}
+function startQuiz(meta){
+quiz={...meta,idx:0,answers:new Array(meta.questions.length).fill(null),marked:new Set(),start:Date.now(),remaining:meta.mins?meta.mins*60:null,timerId:null,submitted:false,paused:false,pausedAt:null};currentLang='te';lastLangQKey=null;
+if(meta.revMode)quiz.revDone=new Set();
+lastQuiz=meta;
+document.body.classList.add('in-quiz');hideAll();$('#quizView').classList.remove('hidden');
+$('#modeNote').textContent=meta.mode==='practice'?'ప్రాక్టీస్ మోడ్: ఆప్షన్ నొక్కగానే సరైన సమాధానం + వివరణ వస్తుంది.':'పరీక్ష మోడ్: సమాధానం ఎంచుకోండి, చివర్లో సబ్మిట్ చేస్తేనే రిజల్ట్ వస్తుంది. 🚩 గుర్తు పెట్టిన ప్రశ్నలను చివర్లో చూసుకోండి.';
+if(meta.mode==='exam'&&meta.mins){$('#timerBox').style.display='inline-block';startTimer()}else{$('#timerBox').style.display='none'}
+renderQuestion();window.scrollTo(0,0);
+if(!navFromPop)pushView('quiz',currentSubject,allMixed);
+}
+function fmtTime(sec){let m=Math.floor(sec/60),s=sec%60;return String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')}
+function renderTimerText(){
+if(!quiz||quiz.remaining==null)return;
+$('#timerTxt').textContent=fmtTime(quiz.remaining);
+let lt=$('#liveTime');if(lt)lt.textContent='⏱️ '+$('#timerTxt').textContent;
+let dt=$('#drawerTime');if(dt)dt.textContent='⏱️ Time left: '+$('#timerTxt').textContent;
+$('#timerBox').className='timer '+(quiz.remaining>300?'ok':'');
+}
+let tick=()=>{if(!quiz||quiz.submitted||quiz.paused)return;quiz.remaining--;renderTimerText();saveResume();if(quiz.remaining<=0){clearInterval(quiz.timerId);toast('⏰ సమయం అయిపోయింది! ఆటో సబ్మిట్ అవుతోంది...');submitQuiz()}};
+function startTimer(){
+clearInterval(quiz.timerId);
+renderTimerText(); /* show current remaining as-is; do NOT eat a second here */
+quiz.timerId=setInterval(tick,1000);
+}
+/* ---- Pause (exam mode AND practice mode; not revision mode) ---- */
+function syncPauseBtn(){
+let b=$('#pauseBtn');if(!b)return;
+if(!quiz||quiz.revMode){b.style.display='none';return}
+b.style.display='';
+b.textContent=quiz.paused?'▶️ కొనసాగించు':'⏸️ పాజ్';
+}
+function pauseQuiz(){
+if(!quiz||quiz.submitted||quiz.revMode)return;
+if(quiz.paused){resumeQuiz();return}
+quiz.paused=true;quiz.pausedAt=Date.now();
+clearInterval(quiz.timerId);
+saveResume();
+syncPauseBtn();
+$('#pauseTime').textContent=quiz.remaining!=null?('⏱️ మిగిలిన సమయం: '+fmtTime(quiz.remaining)):'⏱️ టైమర్ లేదు (ప్రాక్టీస్ మోడ్)';
+let ans=quiz.answers.filter(a=>a!=null).length;
+$('#pauseCounts').textContent='📝 సమాధానం ఇచ్చినవి: '+ans+' / '+quiz.questions.length+' • 🚩 గుర్తు: '+quiz.marked.size;
+let sb=$('#pauseSaveBtn');if(sb)sb.style.display=quiz.key?'':'none';
+let pn=$('#pauseNote');if(pn)pn.textContent=quiz.key?'📱 ఫోన్ వెనక బటన్ నొక్కితే ఈ విండో మూసుకుని పాజ్ అయిన క్విజ్‌కే వస్తారు (టైమర్ ఆగే ఉంటుంది).':'📱 ఇది స్పెషల్ క్విజ్ (Mixed/Quick/Daily) — సేవ్ చేసి తర్వాత రాయడం కుదరదు, కొనసాగించండి లేదా వదిలేయండి.';
+$('#pauseModal').classList.remove('hidden');
+if(!navFromPop)pushView('paused',currentSubject,allMixed);
+}
+function resumeQuiz(){
+if(!quiz||!quiz.paused)return;
+quiz.paused=false;
+if(quiz.pausedAt)quiz.start+=(Date.now()-quiz.pausedAt); /* paused time must not count */
+quiz.pausedAt=null;
+$('#pauseModal').classList.add('hidden');
+syncPauseBtn();
+if(quiz.mode==='exam'&&quiz.mins)startTimer();
+toast('▶️ క్విజ్ కొనసాగుతోంది');
+}
+function pauseSaveExit(){
+if(!quiz)return;
+saveResume();
+$('#pauseModal').classList.add('hidden');
+quiz.paused=false;
+leaveQuiz(true);
+showSubjectUI();
+try{history.replaceState({view:'subject',subject:currentSubject,mixed:allMixed},'')}catch(e){}
+toast('💾 క్విజ్ సేవ్ అయ్యింది — హోమ్‌లో “ఆగిన క్విజ్‌లు” లో నుంచి కొనసాగించండి');
+}
+function pauseDiscard(){
+if(!quiz)return;
+$('#pauseModal').classList.add('hidden');
+removeResumeEntry(quiz.key);
+leaveQuiz(false);
+showSubjectUI();
+try{history.replaceState({view:'subject',subject:currentSubject,mixed:allMixed},'')}catch(e){}
+toast('❌ క్విజ్ వదిలేశారు');
+}
+/* ---- Paused quizzes: a LIST (allSubjectsResumes), not one slot ---- */
+function loadResumes(){
+let list=[];try{list=JSON.parse(localStorage.getItem('allSubjectsResumes')||'[]')}catch(e){list=[]}
+if(!Array.isArray(list))list=[];
+return list;
+}
+function saveResumes(list){try{localStorage.setItem('allSubjectsResumes',JSON.stringify(list))}catch(e){}}
+function migrateLegacyResume(){
+let legacy=null;
+try{legacy=JSON.parse(localStorage.getItem('allSubjectsResume')||'null')}catch(e){}
+if(!legacy)return;
+let list=loadResumes();
+if(!list.some(r=>r.key===legacy.key)){legacy.savedAt=legacy.savedAt||new Date().toISOString();list.push(legacy);saveResumes(list)}
+try{localStorage.removeItem('allSubjectsResume')}catch(e){}
+}
+function removeResumeEntry(key){
+saveResumes(loadResumes().filter(r=>r.key!==key));
+renderPausedList();
+}
+function renderPausedList(){
+let box=$('#pausedBox');if(!box)return;
+let list=loadResumes();
+if(!list.length){box.innerHTML='';return}
+let rows=list.map(function(r){
+let t=TOPICS.find(tt=>tt.id===r.topicId);
+let subj=r.subj||(t?t.subj:'');
+let total=r.questions?r.questions.length:0;
+let ans=r.answers?r.answers.filter(a=>a!=null).length:0;
+let timeTxt=(r.mins&&r.remaining!=null)?('⏱️ మిగిలిన సమయం: '+fmtTime(r.remaining)):((r.mode==='practice')?'📝 ప్రాక్టీస్ మోడ్':'⏱️ '+(r.mode||''));
+let when='';
+try{when=new Date(r.savedAt).toLocaleString('te-IN',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}catch(e){when=''}
+return '<div class="card" style="margin:8px 0"><b>'+esc(r.title||'క్విజ్')+'</b>'
++'<p class="mut">'+esc(subj)+(when?' • 💾 '+esc(when):'')+'</p>'
++'<p class="mut">📝 సమాధానం ఇచ్చినవి: <b>'+ans+' / '+total+'</b> • '+timeTxt+'</p>'
++'<div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" onclick="resumePaused(\''+esc(r.key)+'\')">▶️ కొనసాగించు</button>'
++'<button class="btn ghost" onclick="discardPaused(\''+esc(r.key)+'\')">❌ తొలగించు</button></div></div>';
+}).join('');
+box.innerHTML='<h3 style="margin:14px 0 4px">⏸️ ఆగిన క్విజ్‌లు ('+list.length+')</h3>'+rows;
+}
+function resumePaused(key){
+let r=loadResumes().find(x=>x.key===key);if(!r){toast('ఆ క్విజ్ దొరకలేదు');return}
+let qs=r.questions.map(x=>{let t=TOPICS.find(tt=>tt.id===x.tid);if(!t)return null;let q=t.q.find(qq=>qq.n===x.n);if(!q)return null;let qq={...q,o:x.o,a:x.a};if(x.oe)qq.oe=x.oe;return{topic:t,q:qq}}).filter(Boolean);
+if(!qs.length){toast('ఆ క్విజ్ ప్రశ్నలు దొరకలేదు');return}
+removeResumeEntry(key);
+let meta={title:r.title,topicId:r.topicId,setIdx:r.setIdx,questions:qs,topic:qs[0].topic,key:r.key,mode:r.mode,mins:r.mins,neg:r.neg};
+startQuiz(meta);quiz.idx=r.idx||0;quiz.answers=r.answers||new Array(qs.length).fill(null);quiz.marked=new Set(r.marked||[]);if(r.remaining!=null){quiz.remaining=r.remaining;renderTimerText()}if(r.elapsed!=null)quiz.start=Date.now()-r.elapsed*1000;renderQuestion();
+toast('▶️ ఆగిన చోట నుంచి కొనసాగుతోంది');
+}
+function discardPaused(key){
+removeResumeEntry(key);
+toast('❌ ఆగిన క్విజ్ తొలగించారు');
+}
+function saveResume(){
+if(!quiz||!quiz.key||quiz.submitted)return;
+let entry={key:quiz.key,title:quiz.title,topicId:quiz.topicId,setIdx:quiz.setIdx,subj:quiz.topic?quiz.topic.subj:(currentSubject||''),mode:quiz.mode,mins:quiz.mins,neg:quiz.neg,idx:quiz.idx,answers:quiz.answers,marked:[...quiz.marked],remaining:quiz.remaining,elapsed:Math.round((Date.now()-quiz.start)/1000),savedAt:new Date().toISOString(),questions:quiz.questions.map(it=>({tid:it.topic.id,n:it.q.n,o:it.q.o,a:it.q.a,oe:it.q.oe}))};
+let list=loadResumes();
+let i=list.findIndex(r=>r.key===quiz.key);
+if(i>=0)list[i]=entry;else list.push(entry);
+saveResumes(list);
+if(!$('#homeView').classList.contains('hidden'))renderPausedList();
+}
+/* ---- Revision view + revision quiz ---- */
+function showRevision(){showRevisionUI();if(!navFromPop)pushView('revision',currentSubject,allMixed)}
+function showResults(){showResultsUI();if(!navFromPop)pushView('results',currentSubject,allMixed)}
+function renderRevision(){
+let box=$('#revStages');if(!box)return;
+let today=revToday();
+let stageNames={1:'Day 1',4:'Day 4',7:'Day 7',30:'Day 30'};
+let html='';
+[1,4,7,30].forEach(function(stage){
+let ids=Object.keys(revision).filter(id=>revision[id].stage===stage);
+let dueIds=ids.filter(id=>revision[id].due<=today);
+let notDue=ids.length-dueIds.length;
+let groups={};
+dueIds.forEach(function(id){let r=revision[id];let found=findQById(id);let key=found?found.topic.subj:(r.subj||'—');if(!groups[key])groups[key]=[];groups[key].push({id:id,found:found,due:r.due})});
+let groupHtml=Object.keys(groups).sort().map(function(subj){
+let rows=groups[subj].map(function(g){
+let label=g.found?esc(g.found.topic.te)+' — Q'+g.found.q.n+': '+esc(String(g.found.q.s).slice(0,90)):esc(g.id)+' (ప్రశ్న దొరకలేదు)';
+return '<div class="mut">• '+label+' <span class="mut">(due '+esc(g.due)+')</span></div>';
+}).join('');
+return '<div style="margin-top:8px"><b>'+esc(subj)+' — '+groups[subj].length+' ప్రశ్న(లు)</b>'+rows+'</div>';
+}).join('');
+html+='<div class="card revstage"><h3>'+stageNames[stage]+' రివిజన్</h3>'
++'<p class="mut">ఈ దశలో మొత్తం: <b>'+ids.length+'</b> • ఈరోజు చేయాల్సినవి (due): <b>'+dueIds.length+'</b> • ఇంకా due కానివి: <b>'+notDue+'</b></p>'
++(dueIds.length?groupHtml:'<p class="mut">ఈరోజు ఈ దశలో చేయాల్సిన ప్రశ్నలు లేవు.</p>')
++'<div style="margin-top:10px"><button class="btn" '+(dueIds.length?'':'disabled')+' onclick="startRevisionQuiz('+stage+')">▶️ Start '+stageNames[stage]+' revision ('+dueIds.length+' ప్రశ్నలు)</button></div></div>';
+});
+box.innerHTML=html||'<div class="card">రివిజన్ జాబితా ఖాళీగా ఉంది — ఒక క్విజ్‌లో తప్పు చేస్తే ఆ ప్రశ్న ఇక్కడికి వస్తుంది.</div>';
+}
+function startRevisionQuiz(stage){
+let today=revToday();
+let ids=Object.keys(revision).filter(id=>revision[id].stage===stage&&revision[id].due<=today);
+let qs=[];
+ids.forEach(function(id){let f=findQById(id);if(f)qs.push(f)});
+if(!qs.length){toast('ఈ దశలో ఈరోజు చేయాల్సిన ప్రశ్నలు లేవు.');return}
+startQuiz({title:'📚 Day '+stage+' Revision',questions:qs,topic:qs[0].topic,key:null,mode:'practice',mins:0,neg:false,revMode:true,revStage:stage});
+toast('📚 Day '+stage+' revision — సరైన సమాధానం ఇస్తే తర్వాతి దశకు వెళ్తుంది');
+}
+function revAdvanceToNext(){
+if(!quiz||!quiz.revMode||quiz.submitted)return;
+let total=quiz.questions.length;
+for(let k=1;k<=total;k++){let j=(quiz.idx+k)%total;if(!quiz.revDone.has(j)){quiz.idx=j;renderQuestion();saveResume();return}}
+toast('🎉 Day '+quiz.revStage+' revision పూర్తి!');
+let st=quiz.revStage;
+setTimeout(function(){if(quiz&&quiz.revMode){let s=quiz.revStage;quiz=null;showRevisionUI()}},1200);
+}
+/* ---- Results view ---- */
+function renderResults(){
+let sum=$('#resSummary'),list=$('#resList');if(!sum||!list)return;
+let arr=loadResults();
+if(!arr.length){sum.innerHTML='';list.innerHTML='<div class="card"><p class="mut" style="margin:0">ఇంకా ఫలితాలు లేవు — ఒక క్విజ్ సబ్మిట్ చేస్తే ఇక్కడ కనిపిస్తుంది.</p></div>';return}
+let bySubj={};
+arr.forEach(function(r){let k=r.subject||'Mixed';if(!bySubj[k])bySubj[k]={n:0,best:0,tot:0};bySubj[k].n++;bySubj[k].best=Math.max(bySubj[k].best,r.pct);bySubj[k].tot+=r.pct});
+sum.innerHTML='<div class="card"><h3 style="margin-top:0">📌 సబ్జెక్ట్ వారీగా</h3>'+Object.keys(bySubj).sort().map(function(k){let s=bySubj[k];return '<div>• <b>'+esc(k)+'</b> — ప్రయత్నాలు: '+s.n+' • బెస్ట్: '+s.best+'% • సగటు: '+Math.round(s.tot/s.n)+'%</div>'}).join('')+'</div>';
+list.innerHTML='<h2>🕒 తాజా ఫలితాలు</h2>'+arr.map(function(r){
+let ch=r.chapter?(' • '+esc(r.chapter)):'';
+let st=r.set?(' • సెట్ '+r.set):'';
+return '<div class="card" style="margin-top:10px"><b>'+esc(r.dstr||'')+'</b> — <b>'+esc(r.subject||'Mixed')+'</b>'+ch+st+'<div>స్కోర్: <b>'+r.score+' / '+r.total+'</b> ('+r.pct+'%) • సరైనవి: '+r.correct+' • తప్పులు: '+r.wrong+' • '+(r.mode==='exam'?'పరీక్ష మోడ్':'ప్రాక్టీస్ మోడ్')+'</div></div>';
+}).join('');
+}
+function exitQuiz(ask){
+backToSubject();
+}
+function updateLive(){
+if(!quiz)return;
+let total=quiz.questions.length;
+let ans=quiz.answers.filter(a=>a!=null).length;
+if(quiz.mode==='practice'){
+let corr=0,wrg=0;
+quiz.questions.forEach((it,i)=>{let a=quiz.answers[i];if(it.q.t==='mcq'&&it.q.a!=null&&a!=null){if(a===it.q.a)corr++;else wrg++}});
+$('#liveCounts').textContent='✅ '+corr+' ❌ '+wrg+' 📝 '+ans+'/'+total;let dl=$('#drawerLive');if(dl)dl.textContent=drawerCountsText();
+}else{
+$('#liveCounts').textContent='📝 '+ans+'/'+total+' 🚩 '+quiz.marked.size;let dl2=$('#drawerLive');if(dl2)dl2.textContent=drawerCountsText();
+}
+}
+function togglePalette(){let p=$('#palette');if(p)p.classList.toggle('hidden')}
+function drawerCountsText(){
+if(!quiz)return '';
+let total=quiz.questions.length,ans=quiz.answers.filter(a=>a!=null).length;
+if(quiz.mode==='practice'){let corr=0,wrg=0;quiz.questions.forEach((it,i)=>{let a=quiz.answers[i];if(it.q.t==='mcq'&&it.q.a!=null&&a!=null){if(a===it.q.a)corr++;else wrg++}});return '✅ Correct: '+corr+' • ❌ Wrong: '+wrg+' • 📝 Answered: '+ans+' / '+total}
+return '📝 Answered: '+ans+' / '+total+' • 🚩 Marked: '+quiz.marked.size+' • ✅ Correct: సబ్మిట్ తర్వాత';
+}
+function renderDrawer(){
+let c=$('#drawerContent');if(!c)return;
+if(quiz&&!quiz.submitted){
+let pal=quiz.questions.map((it,i)=>{let cls='';if(i===quiz.idx)cls+=' cur';if(quiz.marked.has(i))cls+=' mark';else if(quiz.answers[i]!=null)cls+=' ans';return `<button class="${cls}" onclick="goQ(${i})">${i+1}</button>`}).join('');
+c.innerHTML=`<div class="card" style="margin:12px 0"><b>📊 Quiz Menu</b><p class="mut">${esc(quiz.title)}</p><p id="drawerLive"><b>${esc(drawerCountsText())}</b></p><p class="mut" id="drawerTime"></p></div><div><b>🔢 Palette — ప్రశ్నకు వెళ్ళండి</b><div class="pal">${pal}</div></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px"><button class="btn" onclick="drawerPrev()">⬅️ వెనక</button><button class="btn" onclick="drawerNext()">తర్వాత ➡️</button>${quiz.revMode?'':'<button class="btn pink" onclick="closeDrawer();document.getElementById(\'submitBtn\').click()">✅ సబ్మిట్</button><button class="btn" onclick="closeDrawer();pauseQuiz()">⏸️ పాజ్</button>'}<button class="btn ghost" onclick="closeDrawer();goHome()">🏠 Home</button></div><div style="margin-top:14px"><b>⚙️ Settings</b><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px"><button class="chip" onclick="document.getElementById('darkBtn').click();renderDrawer()">🌙/☀️ Dark</button><button class="chip" onclick="document.getElementById('soundBtn').click();renderDrawer()">🔊 Sound</button><button class="chip" onclick="document.getElementById('fontUp').click()">A+ పెద్దది</button><button class="chip" onclick="document.getElementById('fontDown').click()">A− చిన్నది</button></div></div>`;
+}else{
+c.innerHTML=`<div class="card" style="margin:12px 0"><b>🏆 Dashboard</b><p>⭐ XP: ${store.xp} • 🔥 Streak: ${streakCount()} రోజులు • 📝 Quizzes: ${store.quizzes} • ✅ Correct: ${store.correct}</p></div><div style="display:flex;flex-direction:column;gap:8px"><button class="btn" onclick="closeDrawer();goHome()">🏠 Home / Topics</button><button class="btn pink" onclick="closeDrawer();startSpecial('mixed')">🎲 Mixed 30</button><button class="btn green" onclick="closeDrawer();startSpecial('quick')">⚡ Quick 10</button><button class="btn" onclick="closeDrawer();startSpecial('daily')">📅 Daily Challenge</button><button class="btn ghost" onclick="closeDrawer();startSpecial('wrong')">❌ Wrong Revision</button><button class="btn ghost" onclick="closeDrawer();startSpecial('book')">🔖 Bookmarks</button><button class="btn" onclick="closeDrawer();showRevision()">📚 రివిజన్ (ఈరోజు: ${revDueCount()})</button><button class="btn ghost" onclick="closeDrawer();showResults()">📊 నా ఫలితాలు</button></div><div style="margin-top:14px"><b>⚙️ Settings</b><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px"><button class="chip" onclick="document.getElementById('darkBtn').click();renderDrawer()">🌙/☀️ Dark</button><button class="chip" onclick="document.getElementById('soundBtn').click();renderDrawer()">🔊 Sound</button></div></div>`;
+}
+}
+function openDrawer(){renderDrawer();let o=$('#drawerOverlay');if(o)o.classList.remove('hidden');let d=$('#drawer');if(d)d.classList.add('open')}
+function closeDrawer(){let o=$('#drawerOverlay');if(o)o.classList.add('hidden');let d=$('#drawer');if(d)d.classList.remove('open')}
+function drawerPrev(){closeDrawer();document.getElementById('prevBtn').click()}
+function drawerNext(){closeDrawer();document.getElementById('nextBtn').click()}
+function renderPalette(){
+let pel=$('#palette');if(!pel)return;
+pel.innerHTML=quiz.questions.map((it,i)=>{
+let cls='';if(i===quiz.idx)cls+=' cur';if(quiz.marked.has(i))cls+=' mark';else if(quiz.answers[i]!=null)cls+=' ans';
+return `<button class="${cls}" onclick="goQ(${i})">${i+1}</button>`}).join('');
+}
+function goQ(i){if(quiz&&quiz.paused)return;quiz.idx=i;if(typeof closeDrawer==='function')closeDrawer();renderQuestion()}
+let currentLang='te',lastLangQKey=null;
+function setLang(lang){currentLang=lang;renderQuestion()}
+function renderQuestion(){
+let it=quiz.questions[quiz.idx],q=it.q,t=it.topic;
+if(lastLangQKey!==quiz.idx){currentLang='te';lastLangQKey=quiz.idx}
+let hideToggle=(t.subj==='English'||t.subj==='Telugu');
+let hasEn=!!q.se;
+let useEn=(currentLang==='en'&&hasEn);
+let dispStem=useEn?q.se:q.s;
+let dispOpts=(useEn&&q.oe)?q.oe:q.o;
+let lt=$('#langToggle');if(lt){lt.style.display=hideToggle?'none':'flex';if(!hideToggle){$('#langTeBtn').classList.toggle('on',currentLang==='te');let eb=$('#langEnBtn');eb.classList.toggle('on',currentLang==='en');eb.disabled=!hasEn;eb.style.opacity=hasEn?'':'0.5';$('#langNote').textContent=hasEn?(currentLang==='en'?'English version చూపుతోంది • వివరణ తెలుగులోనే ఉంటుంది':''):'English version ledu';}}
+let total=quiz.questions.length,ansCount=quiz.answers.filter(a=>a!=null).length;
+$('#qBar').style.width=(ansCount/total*100)+'%';updateLive();
+$('#qNoBadge').textContent='Q'+(quiz.idx+1);
+$('#qExamBadge').textContent=q.e?('📝 '+q.e):t.subj;
+$('#qTypeBadge').textContent=q.t==='open'?((q.openNote||'').includes('book key scan')?'⚠️ book key scan lo kanipinchaledu — స్కోర్‌లో లేదు':'⚠️ search chesina key dorakaledu — స్కోర్‌లో లేదు'):'MCQ';
+$('#bookBtn').textContent=store.book.includes(qid(t,q))?'⭐ బుక్‌మార్క్ అయ్యింది':'☆ బుక్‌మార్క్';
+$('#qStem').textContent=dispStem;
+let optsEl=$('#qOpts'),explEl=$('#qExpl');
+let unknown=(q.t==='open'&&q.o.length>0);
+let openAns=(q.t==='open'&&!q.o.length);
+if(openAns){
+optsEl.innerHTML=`<button class="btn" id="showAnsBtn">👁️ సమాధానం చూపు</button><div id="selfMark" class="hidden" style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn green" onclick="selfMark('yes')">✅ నాకు వచ్చింది</button><button class="btn pink" onclick="selfMark('no')">❌ రాలేదు</button></div>`;
+explEl.classList.add('hidden');
+$('#showAnsBtn').onclick=()=>{explEl.innerHTML=explHTML(it);explEl.classList.remove('hidden');$('#selfMark').classList.remove('hidden');if(quiz.mode==='practice')quiz.answers[quiz.idx]='seen';renderPalette();saveResume()};
+if(quiz.answers[quiz.idx]!=null){explEl.innerHTML=explHTML(it);explEl.classList.remove('hidden');$('#selfMark').classList.remove('hidden')}
+}else if(unknown){
+optsEl.innerHTML=dispOpts.filter(o=>o&&o.trim()).map((o,i)=>`<button class="opt ${quiz.answers[quiz.idx]===i?'sel':''}" onclick="answerQ(${i})"><span class="optletter">${'ABCD'[i]}</span> ${esc(o)}</button>`).join('');
+if(quiz.mode==='practice'&&quiz.answers[quiz.idx]!=null){explEl.innerHTML=explHTML(it);explEl.classList.remove('hidden')}else explEl.classList.add('hidden');
+}else{
+let answered=(quiz.mode==='practice'&&quiz.answers[quiz.idx]!=null);
+optsEl.innerHTML=dispOpts.map((o,i)=>{
+let cls='';if(quiz.answers[quiz.idx]===i)cls+=' sel';if(answered&&i===q.a)cls+=' right';if(answered&&quiz.answers[quiz.idx]===i&&i!==q.a)cls+=' wrong';
+return `<button class="opt ${cls}" ${answered?'disabled':''} onclick="answerQ(${i})"><span class="optletter">${'ABCD'[i]}</span> ${esc(o)}</button>`}).join('');
+if(answered){explEl.innerHTML=explHTML(it);explEl.classList.remove('hidden');}else explEl.classList.add('hidden');
+}
+$('#prevBtn').disabled=quiz.idx===0;
+$('#nextBtn').textContent=quiz.idx===total-1?'చివరి ప్రశ్న ✓':'తర్వాత ➡️';
+if(quiz.revMode){
+let done=quiz.revDone?quiz.revDone.size:0;
+$('#modeNote').textContent='📚 Day '+quiz.revStage+' revision: '+done+' / '+total+' done — సరైన సమాధానం ఇస్తే తర్వాతి దశకు, తప్పితే అదే దశలో మరుసటి రోజు. సబ్మిట్ లేదు.';
+$('#submitBtn').style.display='none';
+$('#nextBtn').textContent=quiz.idx===total-1?'పూర్తి ✓':'తర్వాత ➡️';
+}else{
+$('#submitBtn').style.display='';
+}
+syncPauseBtn();
+}
+function answerQ(i){
+if(quiz.paused)return;
+let it=quiz.questions[quiz.idx],q=it.q;
+if(quiz.revMode){
+if(quiz.revDone.has(quiz.idx))return;
+quiz.answers[quiz.idx]=i;
+if(q.t==='mcq'&&q.a!=null){
+if(i===q.a){
+beep(true);
+let next=revAdvance(qid(it.topic,q));
+if(next===0)toast('✅ సరైనది! Mastered — queue nundi thisesanu');
+else toast('✅ సరైనది! Day '+next+' revision ki vellindhi');
+}else{
+beep(false);
+revFail(qid(it.topic,q));
+toast('❌ తప్పు — same stage lo ne undhi, repu malli try chey');
+}
+quiz.revDone.add(quiz.idx);
+renderQuestion();
+setTimeout(revAdvanceToNext,1400);
+return;
+}
+renderQuestion();return;
+}
+if(quiz.mode==='practice'&&q.t==='mcq'&&q.a!=null&&quiz.answers[quiz.idx]!=null)return;
+quiz.answers[quiz.idx]=i;
+if(q.t==='mcq'&&q.a!=null){
+if(i===q.a){beep(true);if(quiz.mode==='practice')toast('✅ సరైనది!')}else{beep(false);if(!store.wrong.includes(qid(it.topic,q)))store.wrong.push(qid(it.topic,q));if(quiz.mode==='practice')revAdd(qid(it.topic,q),it.topic.subj);save();if(quiz.mode==='practice')toast('❌ తప్పు — వివరణ చదవండి')}
+}
+renderQuestion();saveResume();
+}
+function selfMark(v){
+if(quiz.revMode){
+if(quiz.revDone.has(quiz.idx))return;
+quiz.answers[quiz.idx]=v;
+let it=quiz.questions[quiz.idx];
+if(v==='no'){revFail(qid(it.topic,it.q));toast('❌ పర్వాలేదు — same stage lo ne undhi, repu malli try chey')}
+else{let next=revAdvance(qid(it.topic,it.q));if(next===0)toast('✅ బాగుంది! Mastered — queue nundi thisesanu');else toast('✅ బాగుంది! Day '+next+' revision ki vellindhi')}
+quiz.revDone.add(quiz.idx);
+renderQuestion();
+setTimeout(revAdvanceToNext,1400);
+return;
+}
+quiz.answers[quiz.idx]=v;
+if(v==='no'){let it=quiz.questions[quiz.idx];if(!store.wrong.includes(qid(it.topic,it.q)))store.wrong.push(qid(it.topic,it.q));revAdd(qid(it.topic,it.q),it.topic.subj);save()}
+toast(v==='yes'?'✅ బాగుంది!':'❌ పర్వాలేదు, మళ్ళీ చదవండి — వివరణ పైన ఉంది');
+renderQuestion();saveResume();
+}
+$('#prevBtn').onclick=()=>{if(quiz.idx>0){quiz.idx--;renderQuestion();saveResume()}};
+$('#nextBtn').onclick=()=>{if(quiz.revMode){if(quiz.idx<quiz.questions.length-1){quiz.idx++;renderQuestion()}else{let s=quiz.revStage;quiz=null;toast('🎉 Day '+s+' revision పూర్తి!');showRevisionUI()}return}if(quiz.idx<quiz.questions.length-1){quiz.idx++;renderQuestion();saveResume()}else submitQuiz()};
+$('#markBtn').onclick=()=>{if(quiz.marked.has(quiz.idx))quiz.marked.delete(quiz.idx);else quiz.marked.add(quiz.idx);renderQuestion();saveResume()};
+$('#bookBtn').onclick=()=>{let it=quiz.questions[quiz.idx],id=qid(it.topic,it.q);if(store.book.includes(id)){store.book=store.book.filter(x=>x!==id);toast('బుక్‌మార్క్ తొలగించారు')}else{store.book.push(id);toast('⭐ బుక్‌మార్క్ చేశారు — హోమ్‌లో చూడవచ్చు')};save();renderQuestion()};
+function askSubmit(){
+if(!quiz||quiz.submitted||quiz.revMode)return;
+let total=quiz.questions.length;
+let ans=quiz.answers.filter(a=>a!=null).length;
+let skipped=quiz.questions.filter((it,i)=>it.q.t==='mcq'&&it.q.a!=null&&quiz.answers[i]==null).length;
+showConfirm('క్విజ్ సబ్మిట్ చేయాలా?',
+'<p>📝 సమాధానం ఇచ్చినవి: <b>'+ans+' / '+total+'</b><br>⏭️ దాటవేసినవి (స్కోర్ ప్రశ్నలు): <b>'+skipped+'</b><br>🚩 రివ్యూ కోసం గుర్తు: <b>'+quiz.marked.size+'</b></p><p class="mut">సబ్మిట్ చేస్తే రిజల్ట్ వస్తుంది; తర్వాత ఈ క్విజ్‌ను మార్చలేరు.</p>',
+'✅ సబ్మిట్ చేయి',()=>{submitQuiz()},'❌ ఇంకా రాస్తాను');
+}
+$('#submitBtn').onclick=()=>{askSubmit()};
+function submitQuiz(){
+if(!quiz||quiz.submitted)return;
+if(quiz.revMode){toast('📚 రివిజన్‌లో సబ్మిట్ లేదు — ప్రతి ప్రశ్నకు సమాధానం ఇస్తూ వెళ్ళండి.');return}
+quiz.submitted=true;clearInterval(quiz.timerId);
+let scored=quiz.questions.filter(it=>it.q.t==='mcq'&&it.q.a!=null);
+let correct=0,wrong=0,skipped=0;
+quiz.questions.forEach((it,i)=>{if(it.q.t!=='mcq'||it.q.a==null)return;let a=quiz.answers[i];if(a==null)skipped++;else if(a===it.q.a)correct++;else{wrong++;if(!store.wrong.includes(qid(it.topic,it.q)))store.wrong.push(qid(it.topic,it.q));revAdd(qid(it.topic,it.q),it.topic.subj)}});
+let pct=scored.length?Math.round(correct/scored.length*100):0;
+saveResult({date:new Date().toISOString(),dstr:revDateStr(new Date()),subject:quiz.key?(quiz.topic?quiz.topic.subj:(currentSubject||'Mixed')):(currentSubject||'Mixed'),chapter:quiz.key?(quiz.topic?quiz.topic.te:''):'',set:quiz.key&&quiz.setIdx!=null?quiz.setIdx+1:null,mode:quiz.mode,score:correct,total:scored.length,pct:pct,correct:correct,wrong:wrong});
+let marks=quiz.neg?(correct-wrong*0.25):correct;marks=Math.max(0,Math.round(marks*100)/100);
+let secs=Math.round((Date.now()-quiz.start)/1000);
+store.quizzes++;store.answered+=scored.length;store.correct+=correct;
+store.xp+=correct*10+(pct===100&&scored.length>=10?100:0);
+if(pct===100&&scored.length>=10)store.perfect=true;
+if(!store.streakDates.includes(todayStr()))store.streakDates.push(todayStr());
+if(quiz.key){let p=store.progress[quiz.key]||{done:false,best:0,attempts:0};p.done=true;p.best=Math.max(p.best,pct);p.attempts++;store.progress[quiz.key]=p}
+save();removeResumeEntry(quiz.key);
+document.body.classList.remove('in-quiz');hideAll();$('#resultView').classList.remove('hidden');
+$('#resHead').textContent=pct===100?'🏆 పర్ఫెక్ట్ స్కోర్! అద్భుతం!':pct>=80?'🎉 అద్భుతం! టాపర్ లెవెల్!':pct>=50?'👍 బాగుంది! ఇంకొంచెం ప్రాక్టీస్!':'💪 పర్వాలేదు! మళ్ళీ ప్రయత్నించండి!';
+$('#scoreRing').textContent=pct+'%';$('#scoreRing').style.background=`conic-gradient(#16a34a ${pct}%, #e5e7f5 ${pct}%)`;
+$('#resDetail').textContent=`స్కోర్: ${correct} / ${scored.length} (స్కోర్ చేసే ప్రశ్నలు) • తప్పులు: ${wrong} • దాటవేసినవి: ${skipped} • స్కోర్‌లో లేనివి: ${quiz.questions.length-scored.length} • మార్కులు: ${marks} • సమయం: ${Math.floor(secs/60)} నిమి ${secs%60} సెకన్లు • XP +${correct*10+(pct===100&&scored.length>=10?100:0)}`;
+$('#resMsg').textContent=quiz.title;
+quiz.result={correct,wrong,skipped,scored:scored.length,pct,marks};
+$('#reviewBox').classList.add('hidden');$('#reviewBox').innerHTML='';
+window.scrollTo(0,0);
+try{history.replaceState({view:'result',subject:currentSubject,mixed:allMixed},'')}catch(e){}
+if(pct>=80)confetti();
+}
+function showReview(){
+let box=$('#reviewBox');box.classList.remove('hidden');
+box.innerHTML='<h2>📖 రివ్యూ — అన్ని ప్రశ్నలు + వివరణ</h2>'+quiz.questions.map((it,i)=>{
+let q=it.q,a=quiz.answers[i];
+let line='';
+if(q.t==='mcq'&&q.a!=null){line=a==null?'<span style="color:#d97706">దాటవేశారు</span>':a===q.a?'<span style="color:#16a34a">✅ సరైనది</span>':'<span style="color:#dc2626">❌ తప్పు — మీ సమాధానం: '+esc(q.o[a])+'</span>'}
+else if(q.t==='open'&&!q.o.length){line=a==='yes'?'<span style="color:#16a34a">✅ మీకు వచ్చింది</span>':a==='no'?'<span style="color:#dc2626">❌ రాలేదు</span>':'<span class="mut">చూడలేదు</span>'}
+else{line='<span class="mut">స్కోర్‌లో లేదు (సమాధానం మూలంలో లేదు)</span>'}
+return `<div class="review"><b>Q${i+1}. ${esc(q.s)}</b><div class="ansline">${line}</div>${explHTML(it)}</div>`}).join('');
+box.scrollIntoView();
+}
+function retakeQuiz(){if(lastQuiz){pendingQuiz=lastQuiz;$('#modalTitle').textContent=lastQuiz.title;$('#modalInfo').textContent=lastQuiz.questions.length+' ప్రశ్నలు';$('#startModal').classList.remove('hidden')}else goHome()}
+function shareResult(){
+if(!quiz||!quiz.result)return;
+let txt=`All Subjects Quiz: ${quiz.title} — నా స్కోర్ ${quiz.result.correct}/${quiz.result.scored} (${quiz.result.pct}%)! మీరు కూడా ప్రయత్నించండి.`;
+if(navigator.share){navigator.share({text:txt}).catch(()=>{})}
+else if(navigator.clipboard){navigator.clipboard.writeText(txt).then(()=>toast('📋 స్కోర్ కాపీ అయ్యింది — WhatsApp లో పేస్ట్ చేయండి'))}
+else toast(txt);
+}
+function confetti(){
+let c=$('#confetti'),ctx=c.getContext('2d');c.width=innerWidth;c.height=innerHeight;
+let ps=Array.from({length:150},()=>({x:Math.random()*c.width,y:-20,vy:2+Math.random()*4,vx:-2+Math.random()*4,s:5+Math.random()*7,col:['#4f46e5','#db2777','#059669','#f59e0b','#06b6d4'][Math.floor(Math.random()*5)]}));
+let t=0;let iv=setInterval(()=>{ctx.clearRect(0,0,c.width,c.height);ps.forEach(p=>{p.y+=p.vy;p.x+=p.vx;ctx.fillStyle=p.col;ctx.fillRect(p.x,p.y,p.s,p.s)});t++;if(t>120){clearInterval(iv);ctx.clearRect(0,0,c.width,c.height)}},30);
+}
+document.addEventListener('keydown',e=>{
+if(!quiz||quiz.submitted||quiz.paused||!$('#quizView').classList.contains('hidden')===false)return;
+if(!$('#startModal').classList.contains('hidden'))return;
+if(['1','2','3','4'].includes(e.key)){let it=quiz.questions[quiz.idx];if(it.q.o&&it.q.o.length)answerQ(parseInt(e.key)-1)}
+else if(e.key==='n'||e.key==='N')$('#nextBtn').click();
+else if(e.key==='p'||e.key==='P')$('#prevBtn').click();
+else if(e.key==='m'||e.key==='M')$('#bookBtn').click();
+});
+applySettings();migrateLegacyResume();renderHome();
+</script>
+</body>
+</html>
